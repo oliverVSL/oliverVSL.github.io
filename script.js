@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sounds = {
-      sound1: new Audio('sound1.mp3'),
+      sound1: new Audio('MLGHorn.mp3'),
       sound2: new Audio('sound2.mp3'),
       sound3: new Audio('sound3.mp3'),
       sound4: new Audio('sound4.mp3'),
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sound9: new Audio('sound9.mp3')
     };
   
-    document.getElementById('sound1').addEventListener('click', () => sounds.sound1.play());
+    document.getElementById('MLGHorn').addEventListener('click', () => sounds.sound1.play());
     document.getElementById('sound2').addEventListener('click', () => sounds.sound2.play());
     document.getElementById('sound3').addEventListener('click', () => sounds.sound3.play());
     document.getElementById('sound4').addEventListener('click', () => sounds.sound4.play());

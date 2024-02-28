@@ -1,13 +1,47 @@
-.grid-container {
+body {
+    margin: 20px;
+    display: flex;
+    flex-direction: column; /* Ensures content is laid out vertically */
+    align-items: center; /* Centers content horizontally */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Adds space between the title and the button grid */
+    color: #007BFF; /* Optional: Matches the button color for a cohesive look */
+  }
+  
+  .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates three columns */
-    grid-gap: 10px; /* Space between rows and columns */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
     padding: 10px;
+    max-width: 600px;
+    justify-content: center;
   }
   
   button {
     padding: 20px;
+    aspect-ratio: 1 / 1;
     font-size: 16px;
     cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover, button:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
   }
   
